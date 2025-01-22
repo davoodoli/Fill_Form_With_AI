@@ -2,4 +2,3 @@ streamlit-audiorec
 openai
 python_dotenv 
 langchain
-langchain_openai
