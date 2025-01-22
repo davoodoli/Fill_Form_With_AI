@@ -17,14 +17,10 @@ os.environ["LANGCHAIN_TRACING_V2"] = "true"
 os.environ["LANGCHAIN_PROJECT"] = os.getenv("LANGCHAIN_PROJECT")
 
 mytext = ""
-# Function to transcribe audio using OpenAI's Whisper model
 
 
-# Audio processor class for streamlit_webrtc
-#class AudioProcessor(AudioProcessorBase):
-    #def recv(self, frame):
-        # Process the audio frame (frame.to_ndarray() can be used if necessary)
-        #return frame
+
+
 
 
 def generate_chat_response(prompt): 
