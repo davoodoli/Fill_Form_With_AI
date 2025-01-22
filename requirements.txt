@@ -1,4 +1,4 @@
 streamlit-audiorec
-openai
+openai==0.28
 python_dotenv 
 
