@@ -1,5 +1,4 @@
 streamlit-audiorec
 openai
 python_dotenv 
-langchain_core.prompts
 
