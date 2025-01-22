@@ -1,5 +1,5 @@
 import streamlit as st
-from streamlit_webrtc import webrtc_streamer, AudioProcessorBase
+#from streamlit_webrtc import webrtc_streamer, AudioProcessorBase
 from st_audiorec import st_audiorec
 import openai
 import os
@@ -49,10 +49,10 @@ def typeAudio():
         pass
 
 # Audio processor class for streamlit_webrtc
-class AudioProcessor(AudioProcessorBase):
-    def recv(self, frame):
+#class AudioProcessor(AudioProcessorBase):
+    #def recv(self, frame):
         # Process the audio frame (frame.to_ndarray() can be used if necessary)
-        return frame
+        #return frame
 
 
 def generate_chat_response(prompt): 
