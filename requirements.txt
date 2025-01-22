@@ -1,4 +1,4 @@
-python==3.10.11
+python==3.12.8
 streamlit-audiorec
 openai==0.28
 streamlit
