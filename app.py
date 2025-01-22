@@ -94,19 +94,6 @@ if st.button("To Text", on_click=typeAudio):
 
 
 
-# ChatPromptTemplate for extracting information
-prompt = ChatPromptTemplate.from_messages(
-    [
-        ("system", "You are supposed to extract some info from input,\
-         if the user spoke in Farsi language, fill the form with English Equivalent and make the response in English"),
-        ("user", "{input}")
-    ]
-)
-
-
-
-# Output parser
-outputParser = StrOutputParser()
 
 
 
