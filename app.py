@@ -18,35 +18,7 @@ os.environ["LANGCHAIN_PROJECT"] = os.getenv("LANGCHAIN_PROJECT")
 
 mytext = ""
 # Function to transcribe audio using OpenAI's Whisper model
-def typeAudio():
-    audio_file_path = "C:/Users/David/Downloads/a1.wav"
-    
-    with open(audio_file_path, "rb") as audio_file:
-        transcription = openai.Audio.transcribe(
-            model="whisper-1",
-            file=audio_file,
-            response_format="text"
-        )
 
-    response = generate_chat_response(transcription+"what is their name?their last name?\
-                                    their phone? address? city? province? postal-code?\
-                                      give me the output in a format that each property separate from the next property by * symbol\
-                                      I mean Name of the person then put *, then last name and * etc.\
-                                    ")
-    name, last_name, address, phone, city, province, code = response.split('*')
-    st.session_state.name = name
-    st.session_state.last = last_name
-    st.session_state.phone = phone
-    st.session_state.address = address
-    st.session_state.province = province
-    st.session_state.city = city
-    st.session_state.code = code
-
-
-    if isinstance(transcription, dict):
-        mytext += transcription["text"]
-    else:
-        pass
 
 # Audio processor class for streamlit_webrtc
 #class AudioProcessor(AudioProcessorBase):
@@ -87,10 +59,6 @@ if wav_audio_data is not None:
     st.session_state.city = city
     st.session_state.code = code
 
-
-# Button to trigger transcription
-if st.button("To Text", on_click=typeAudio):
-    pass
 
 
 
