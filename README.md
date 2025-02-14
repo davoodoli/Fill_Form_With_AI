@@ -13,4 +13,4 @@ This project is designed to fill out forms based on user audio input. Users can 
 1. **Clone the repository**: 
    ```bash
    git clone https://github.com/davoodoli/Form-Filler-with-Speech-to-Text-and-Multilingual-Support.git
-pip install -r requirements.txt
+   pip install -r requirements.txt
