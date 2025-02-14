@@ -9,3 +9,8 @@ This project is designed to fill out forms based on user audio input. Users can 
 - **Intelligent Form Filling**: Understands natural language and fills in the form fields accurately, even if the user doesn't follow the exact placeholders.
 - **User-Friendly Interface**: Easy to use and intuitive interface for seamless user experience.
 
+## Installation
+1. **Clone the repository**: 
+   ```bash
+   git clone https://github.com/davoodoli/Form-Filler-with-Speech-to-Text-and-Multilingual-Support.git
+pip install -r requirements.txt
